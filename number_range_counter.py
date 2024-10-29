@@ -28,4 +28,8 @@ while True:
     except ValueError:
         print(f"{'-'*50}\nInvalid input, exiting...")
         break
-    
+print(f"{'-'*50}\nNumber count (1 - 50): {numbers_1_10}")
+print(numbers_11_20)
+print(numbers_21_30)   
+print(numbers_31_40)
+print(numbers_41_50)
