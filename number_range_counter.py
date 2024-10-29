@@ -13,9 +13,9 @@ while True:
         number = int(input(f"{'-'*50}\nEnter a number between 1 - 50 : "))
         if 1 <= int(number) <= 10:
             numbers_1_10 += 1
-        elif 21 <= int(number) <= 20:
+        elif 11 <= int(number) <= 20:
             numbers_11_20 += 1
-        elif 31 <= int(number) <= 30:
+        elif 21 <= int(number) <= 30:
             numbers_21_30 += 1
         elif 31 <= int(number) <= 40:
             numbers_31_40 += 1
@@ -29,7 +29,7 @@ while True:
         print(f"{'-'*50}\nInvalid input, exiting...")
         break
 print(f"{'-'*50}\nNumber count (1 - 50): {numbers_1_10}")
-print(numbers_11_20)
-print(numbers_21_30)   
-print(numbers_31_40)
-print(numbers_41_50)
+print(f"{'-'*50}\nNumber count (1 - 50): {numbers_11_20}")
+print(f"{'-'*50}\nNumber count (1 - 50): {numbers_21_30}")   
+print(f"{'-'*50}\nNumber count (1 - 50): {numbers_31_40}")
+print(f"{'-'*50}\nNumber count (1 - 50): {numbers_41_50}")
