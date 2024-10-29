@@ -13,6 +13,7 @@ while True:
         number = int(input(f"{'-'*50}\nEnter a number between 1 - 50 : "))
         if 1 <= int(number) <= 10:
             numbers_1_10 += 1
+            numbers.append(int(number))
         elif 11 <= int(number) <= 20:
             numbers_11_20 += 1
         elif 21 <= int(number) <= 30:
@@ -28,8 +29,11 @@ while True:
     except ValueError:
         print(f"{'-'*50}\nInvalid input, exiting...")
         break
-print(f"{'-'*50}\nNumber count (1 - 50): {numbers_1_10}")
-print(f"{'-'*50}\nNumber count (1 - 50): {numbers_11_20}")
-print(f"{'-'*50}\nNumber count (1 - 50): {numbers_21_30}")   
-print(f"{'-'*50}\nNumber count (1 - 50): {numbers_31_40}")
-print(f"{'-'*50}\nNumber count (1 - 50): {numbers_41_50}")
+#Categorize numbers in different number ranges
+number_inside_1_10 = [number for number in numbers if 1 <= int(number) <= 10]    
+#Display how many times a number is entered within number ranges   
+print(f"{'-'*50}\nNumbers count (1 - 10): {numbers_1_10}\nNumbers collection : {number_inside_1_10}")
+print(f"{'-'*50}\nNumbers count (11 - 20): {numbers_11_20}")
+print(f"{'-'*50}\nNumbers count (21 - 30): {numbers_21_30}")   
+print(f"{'-'*50}\nNumbers count (31 - 40): {numbers_31_40}")
+print(f"{'-'*50}\nNumbers count (41 - 50): {numbers_41_50}")
